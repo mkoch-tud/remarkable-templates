@@ -1,0 +1,384 @@
+{
+    "name": "Meeting Minutes",
+    "author": "Custom",
+    "templateVersion": "1.0.0",
+    "formatVersion": 1,
+    "categories": ["Planners"],
+    "orientation": "portrait",
+    "constants": [
+        {"marginLeft": 100},
+        {"marginRight": 100},
+        {"contentWidth": "templateWidth - marginLeft - marginRight"},
+        {"lineHeight": 65},
+        {"headerY": 80},
+        {"headerLineY": "headerY + 50"},
+        {"firstLineY": "headerLineY + lineHeight"},
+        {"line2Y": "firstLineY + lineHeight"},
+        {"line3Y": "line2Y + lineHeight"},
+        {"line4Y": "line3Y + lineHeight"},
+        {"mainStartY": "line4Y"},
+        {"main1Y": "mainStartY + lineHeight"},
+        {"main2Y": "main1Y + lineHeight"},
+        {"main3Y": "main2Y + lineHeight"},
+        {"main4Y": "main3Y + lineHeight"},
+        {"main5Y": "main4Y + lineHeight"},
+        {"main6Y": "main5Y + lineHeight"},
+        {"main7Y": "main6Y + lineHeight"},
+        {"main8Y": "main7Y + lineHeight"},
+        {"main9Y": "main8Y + lineHeight"},
+        {"main10Y": "main9Y + lineHeight"},
+        {"main11Y": "main10Y + lineHeight"},
+        {"main12Y": "main11Y + lineHeight"},
+        {"main13Y": "main12Y + lineHeight"},
+        {"main14Y": "main13Y + lineHeight"},
+        {"main15Y": "main14Y + lineHeight"},
+        {"main16Y": "main15Y + lineHeight"},
+        {"main17Y": "main16Y + lineHeight"},
+        {"footerStartY": "main17Y"},
+        {"halfContent": "contentWidth / 2"},
+        {"textMargin": 120},
+        {"halfLine": "lineHeight / 2"}
+    ],
+    "items": [
+        {
+            "type": "text",
+            "text": "Date          /          /",
+            "fontSize": 42,
+            "position": {
+                "x": "marginLeft + contentWidth - 400",
+                "y": "headerY"
+            }
+        },
+        {
+            "type": "text",
+            "text": "Agenda",
+            "fontSize": 32,
+            "fontWeight": "bold",
+            "position": {
+                "x": "marginLeft",
+                "y": "headerLineY + halfLine"
+            }
+        },
+        {
+            "type": "text",
+            "text": "Attendees",
+            "fontSize": 32,
+            "fontWeight": "bold",
+            "position": {
+                "x": "halfContent + textMargin",
+                "y": "headerLineY + halfLine"
+            }
+        },
+        {
+            "type": "text",
+            "text": "Notes",
+            "fontSize": 32,
+            "fontWeight": "bold",
+            "position": {
+                "x": "marginLeft",
+                "y": "mainStartY + halfLine"
+            }
+        },
+        {
+            "type": "text",
+            "text": "Decisions",
+            "fontSize": 32,
+            "fontWeight": "bold",
+            "position": {
+                "x": "marginLeft",
+                "y": "footerStartY + halfLine"
+            }
+        },
+        {
+            "type": "text",
+            "text": "Action Items",
+            "fontSize": 32,
+            "fontWeight": "bold",
+            "position": {
+                "x": "halfContent + textMargin",
+                "y": "footerStartY + halfLine"
+            }
+        },
+        {
+            "type": "path",
+            "data": [
+                "M", "marginLeft", "headerLineY",
+                "L", "marginLeft + contentWidth", "headerLineY"
+            ],
+            "strokeWidth": 3
+        },
+
+        {
+            "type": "path",
+            "data": [
+                "M", "marginLeft", "firstLineY",
+                "L", "marginLeft + contentWidth", "firstLineY"
+            ],
+            "strokeWidth": 1,
+            "opacity": 0.3
+        },
+        {
+            "type": "path",
+            "data": [
+                "M", "marginLeft", "line2Y",
+                "L", "marginLeft + contentWidth", "line2Y"
+            ],
+            "strokeWidth": 1,
+            "opacity": 0.3
+        },
+        {
+            "type": "path",
+            "data": [
+                "M", "marginLeft", "line3Y",
+                "L", "marginLeft + contentWidth", "line3Y"
+            ],
+            "strokeWidth": 1,
+            "opacity": 0.3
+        },
+
+        {
+            "type": "path",
+            "data": [
+                "M", "marginLeft", "line4Y",
+                "L", "marginLeft + contentWidth", "line4Y"
+            ],
+            "strokeWidth": 3
+        },
+
+        {
+            "type": "path",
+            "data": [
+                "M", "marginLeft + halfContent", "headerLineY",
+                "L", "marginLeft + halfContent", "line4Y"
+            ],
+            "strokeWidth": 1
+        },
+
+        {
+            "type": "path",
+            "data": [
+                "M", "marginLeft", "main1Y",
+                "L", "marginLeft + contentWidth", "main1Y"
+            ],
+            "strokeWidth": 1,
+            "opacity": 0.3
+        },
+        {
+            "type": "path",
+            "data": [
+                "M", "marginLeft", "main2Y",
+                "L", "marginLeft + contentWidth", "main2Y"
+            ],
+            "strokeWidth": 1,
+            "opacity": 0.3
+        },
+        {
+            "type": "path",
+            "data": [
+                "M", "marginLeft", "main3Y",
+                "L", "marginLeft + contentWidth", "main3Y"
+            ],
+            "strokeWidth": 1,
+            "opacity": 0.3
+        },
+        {
+            "type": "path",
+            "data": [
+                "M", "marginLeft", "main4Y",
+                "L", "marginLeft + contentWidth", "main4Y"
+            ],
+            "strokeWidth": 1,
+            "opacity": 0.3
+        },
+        {
+            "type": "path",
+            "data": [
+                "M", "marginLeft", "main5Y",
+                "L", "marginLeft + contentWidth", "main5Y"
+            ],
+            "strokeWidth": 1,
+            "opacity": 0.3
+        },
+        {
+            "type": "path",
+            "data": [
+                "M", "marginLeft", "main6Y",
+                "L", "marginLeft + contentWidth", "main6Y"
+            ],
+            "strokeWidth": 1,
+            "opacity": 0.3
+        },
+        {
+            "type": "path",
+            "data": [
+                "M", "marginLeft", "main7Y",
+                "L", "marginLeft + contentWidth", "main7Y"
+            ],
+            "strokeWidth": 1,
+            "opacity": 0.3
+        },
+        {
+            "type": "path",
+            "data": [
+                "M", "marginLeft", "main8Y",
+                "L", "marginLeft + contentWidth", "main8Y"
+            ],
+            "strokeWidth": 1,
+            "opacity": 0.3
+        },
+        {
+            "type": "path",
+            "data": [
+                "M", "marginLeft", "main9Y",
+                "L", "marginLeft + contentWidth", "main9Y"
+            ],
+            "strokeWidth": 1,
+            "opacity": 0.3
+        },
+        {
+            "type": "path",
+            "data": [
+                "M", "marginLeft", "main10Y",
+                "L", "marginLeft + contentWidth", "main10Y"
+            ],
+            "strokeWidth": 1,
+            "opacity": 0.3
+        },
+        {
+            "type": "path",
+            "data": [
+                "M", "marginLeft", "main11Y",
+                "L", "marginLeft + contentWidth", "main11Y"
+            ],
+            "strokeWidth": 1,
+            "opacity": 0.3
+        },
+        {
+            "type": "path",
+            "data": [
+                "M", "marginLeft", "main12Y",
+                "L", "marginLeft + contentWidth", "main12Y"
+            ],
+            "strokeWidth": 1,
+            "opacity": 0.3
+        },
+        {
+            "type": "path",
+            "data": [
+                "M", "marginLeft", "main13Y",
+                "L", "marginLeft + contentWidth", "main13Y"
+            ],
+            "strokeWidth": 1,
+            "opacity": 0.3
+        },
+        {
+            "type": "path",
+            "data": [
+                "M", "marginLeft", "main14Y",
+                "L", "marginLeft + contentWidth", "main14Y"
+            ],
+            "strokeWidth": 1,
+            "opacity": 0.3
+        },
+        {
+            "type": "path",
+            "data": [
+                "M", "marginLeft", "main15Y",
+                "L", "marginLeft + contentWidth", "main15Y"
+            ],
+            "strokeWidth": 1,
+            "opacity": 0.3
+        },
+        {
+            "type": "path",
+            "data": [
+                "M", "marginLeft", "main16Y",
+                "L", "marginLeft + contentWidth", "main16Y"
+            ],
+            "strokeWidth": 1,
+            "opacity": 0.3
+        },
+
+        {
+            "type": "path",
+            "data": [
+                "M", "marginLeft", "main17Y",
+                "L", "marginLeft + contentWidth", "main17Y"
+            ],
+            "strokeWidth": 3
+        },
+
+        {
+            "type": "group",
+            "boundingBox": {
+                "x": "marginLeft",
+                "y": "footerStartY",
+                "width": "contentWidth",
+                "height": "lineHeight"
+            },
+            "children": [
+                {
+                    "type": "path",
+                    "data": [
+                        "M", 0, "lineHeight",
+                        "L", "contentWidth", "lineHeight"
+                    ],
+                    "strokeWidth": 1,
+                    "opacity": 0.3
+                },
+                {
+                    "type": "path",
+                    "data": [
+                        "M", "halfContent", 0,
+                        "L", "halfContent", "lineHeight"
+                    ],
+                    "strokeWidth": 1
+                }
+            ]
+        },
+        {
+            "type": "group",
+            "boundingBox": {
+                "x": "marginLeft",
+                "y": "footerStartY + lineHeight",
+                "width": "contentWidth",
+                "height": "lineHeight"
+            },
+            "repeat": {
+                "rows": "down"
+            },
+            "children": [
+                {
+                    "type": "path",
+                    "data": [
+                        "M", 0, "lineHeight",
+                        "L", "contentWidth", "lineHeight"
+                    ],
+                    "strokeWidth": 1,
+                    "opacity": 0.3
+                },
+                {
+                    "type": "path",
+                    "data": [
+                        "M", "halfContent", 0,
+                        "L", "halfContent", "lineHeight"
+                    ],
+                    "strokeWidth": 1
+                },
+                {
+                    "type": "path",
+                    "data": [
+                        "M", "halfContent + 15", "lineHeight / 2 - 12",
+                        "L", "halfContent + 39", "lineHeight / 2 - 12",
+                        "L", "halfContent + 39", "lineHeight / 2 + 12",
+                        "L", "halfContent + 15", "lineHeight / 2 + 12",
+                        "Z"
+                    ],
+                    "strokeWidth": 2,
+                    "opacity": 0.6
+                }
+            ]
+        }
+    ]
+}
+

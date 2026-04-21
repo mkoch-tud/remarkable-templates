@@ -1,0 +1,253 @@
+{
+    "name": "Daily Planner",
+    "author": "M.Koch and Claude",
+    "templateVersion": "1.0.0",
+    "formatVersion": 1,
+    "categories": ["Planners"],
+    "orientation": "portrait",
+    "constants": [
+        {"marginLeft": 100},
+        {"marginRight": 100},
+        {"contentWidth": "templateWidth - marginLeft - marginRight"},
+        {"lineHeight": 65},
+        {"headerY": 80},
+        {"headerLineY": "headerY + 50"},
+        {"firstLineY": "headerLineY + lineHeight"},
+        {"line2Y": "firstLineY + 2 * lineHeight"},
+        {"line4Y": "line2Y + 2 * lineHeight"},
+        {"line6Y": "line4Y + 2 * lineHeight"},
+        {"line8Y": "line6Y + 2 * lineHeight"},
+        {"line10Y": "line8Y + 2 * lineHeight"},
+        {"line12Y": "line10Y + 2 * lineHeight"},
+        {"line14Y": "line12Y + 2 * lineHeight"},
+        {"line16Y": "line14Y + 2 * lineHeight"},
+        {"line18Y": "line16Y + 2 * lineHeight"},
+        {"halfContent": "contentWidth / 2"},
+        {"textMargin": 120},
+        {"halfLine": "(lineHeight / 2) + 10"}
+    ],
+    "items": [
+        {
+            "type": "text",
+            "text": "Date          /          /",
+            "fontSize": 42,
+            "position": {
+                "x": "marginLeft + contentWidth - 400",
+                "y": "headerY"
+            }
+        },
+        {
+            "type": "text",
+            "text": "M   T   W   T   F   S   S",
+            "fontSize": 42,
+            "position": {
+                "x": "marginLeft + 25",
+                "y": "headerY"
+            }
+        },
+        {
+            "type": "path",
+            "data": [
+                "M", "marginLeft", "headerLineY",
+                "L", "marginLeft + halfContent-15", "headerLineY"
+            ],
+            "strokeWidth": 3,
+            "opacity": 0.3
+        },
+        {
+            "type": "path",
+            "data": [
+                "M", "marginLeft + halfContent + 15", "headerLineY",
+                "L", "marginLeft + contentWidth", "headerLineY"
+            ],
+            "strokeWidth": 3,
+            "opacity": 0.3
+        },
+        {
+            "type": "text",
+            "text": "Priority",
+            "fontSize": 32,
+            "position": {
+                "x": "marginLeft + halfContent + 15",
+                "y": "headerLineY + halfLine"
+            }
+        },
+        {
+            "type": "text",
+            "text": "06:00",
+            "fontSize": 32,
+            "position": {
+                "x": "marginLeft",
+                "y": "firstLineY + halfLine"
+            }
+        },
+        {
+            "type": "text",
+            "text": "08:00",
+            "fontSize": 32,
+            "position": {
+                "x": "marginLeft",
+                "y": "line2Y + halfLine"
+            }
+        },
+        {
+            "type": "text",
+            "text": "10:00",
+            "fontSize": 32,
+            "position": {
+                "x": "marginLeft",
+                "y": "line4Y + halfLine"
+            }
+        },
+        {
+            "type": "text",
+            "text": "12:00",
+            "fontSize": 32,
+            "position": {
+                "x": "marginLeft",
+                "y": "line6Y + halfLine"
+            }
+        },
+        {
+            "type": "text",
+            "text": "14:00",
+            "fontSize": 32,
+            "position": {
+                "x": "marginLeft",
+                "y": "line8Y + halfLine"
+            }
+        },
+        {
+            "type": "text",
+            "text": "16:00",
+            "fontSize": 32,
+            "position": {
+                "x": "marginLeft",
+                "y": "line10Y + halfLine"
+            }
+        },
+        {
+            "type": "text",
+            "text": "18:00",
+            "fontSize": 32,
+            "position": {
+                "x": "marginLeft",
+                "y": "line12Y + halfLine"
+            }
+        },
+        {
+            "type": "text",
+            "text": "20:00",
+            "fontSize": 32,
+            "position": {
+                "x": "marginLeft",
+                "y": "line14Y + halfLine"
+            }
+        },
+        {
+            "type": "text",
+            "text": "22:00",
+            "fontSize": 32,
+            "position": {
+                "x": "marginLeft",
+                "y": "line16Y + halfLine"
+            }
+        },
+        {
+            "type": "text",
+            "text": "00:00",
+            "fontSize": 32,
+            "position": {
+                "x": "marginLeft",
+                "y": "line18Y + halfLine"
+            }
+        },
+        {
+            "type": "text",
+            "text": "Reminders",
+            "fontSize": 32,
+            "position": {
+                "x": "marginLeft + halfContent + 15",
+                "y": "line4Y + lineHeight + halfLine"
+            }
+        },
+        {
+            "type": "text",
+            "text": "Notes",
+            "fontSize": 32,
+            "position": {
+                "x": "marginLeft + halfContent + 15",
+                "y": "line14Y + lineHeight + halfLine"
+            }
+        },
+        {
+            "type": "text",
+            "text": "For tomorrow",
+            "fontSize": 32,
+            "position": {
+                "x": "marginLeft",
+                "y": "line18Y + 2 * lineHeight + halfLine"
+            }
+        },
+        {
+            "type": "path",
+            "data": [
+                "M", "marginLeft", "line18Y + 2 * lineHeight",
+                "L", "marginLeft + halfContent-15", "line18Y + 2 * lineHeight"
+            ],
+            "strokeWidth": 3,
+            "opacity": 0.3
+        },
+        {
+            "type": "path",
+            "data": [
+                "M", "marginLeft + halfContent + 15", "line4Y + lineHeight",
+                "L", "marginLeft + contentWidth", "line4Y + lineHeight"
+            ],
+            "strokeWidth": 3,
+            "opacity": 0.3
+        },
+        {
+            "type": "path",
+            "data": [
+                "M", "marginLeft + halfContent + 15", "line14Y + lineHeight",
+                "L", "marginLeft + contentWidth", "line14Y + lineHeight"
+            ],
+            "strokeWidth": 3,
+            "opacity": 0.3
+        },
+        {
+            "type": "group",
+            "boundingBox": {
+                "x": "marginLeft",
+                "y": "headerLineY",
+                "width": "contentWidth",
+                "height": "lineHeight"
+            },
+            "repeat": {
+                "rows": "down"
+            },
+            "children": [
+                {
+                    "type": "path",
+                    "data": [
+                        "M", 0, "lineHeight",
+                        "L", "halfContent-15", "lineHeight"
+                    ],
+                    "strokeWidth": 1,
+                    "opacity": 0.3
+                },
+                {
+                    "type": "path",
+                    "data": [
+                        "M", "halfContent+15", "lineHeight",
+                        "L", "contentWidth", "lineHeight"
+                    ],
+                    "strokeWidth": 1,
+                    "opacity": 0.3
+                }
+            ]
+        }
+    ]
+}
+
